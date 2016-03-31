@@ -39,11 +39,11 @@ class spider():
 
 
 spider=spider()
-url='http://www.xbiquge.com/2_2762/'
+url='http://www.xbiquge.com/12_12804/'
 source=spider.getsource(url)
 links=spider.creatlinks(source,url)
 
-f=open('hi.txt','a+')
+f=open('xiansong.txt','a+')
 for link in links:
     context=spider.getsource(link)
     contextlist=spider.extra(context)
